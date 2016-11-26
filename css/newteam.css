@@ -1,0 +1,116 @@
+.container {
+  width: 30%;
+}
+.container #team-input {
+  margin-top: 2em;
+  width: 100%;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  font-family: Roboto, Gill Sans, sans-serif;
+  font-size: 30px;
+  color: #4B4B4B;
+  background-color: #FFBE54;
+}
+.container #team-done {
+  display: none;
+  margin-top: 3em;
+  font-family: Roboto, Gill Sans, sans-serif;
+  display: none;
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: #F55468;
+  padding: 10px 50px 10px 50px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container #team-done:hover {
+  background-color: #FA4057;
+  color: #fff;
+  transition: all .3s ease-in-out;
+  transform: scale(1.05);
+}
+.container :focus {
+  outline: 0;
+}
+.container ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.container :-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.4);
+}
+.container ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.4);
+}
+.container :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.new-team-container {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
+.new-team-container h3 {
+  margin-top: 6em;
+  font-family: Roboto, Gill Sans, sans-serif;
+  color: #4B4B4B;
+  font-weight: 400;
+}
+.new-team-container #new-team-name {
+  font-family: Roboto, Gill Sans, sans-serif;
+  font-size: 48px;
+  color: #fff;
+  font-style: oblique;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.39);
+}
+.new-team-container #next {
+  margin-top: 1em;
+  font-family: Roboto, Gill Sans, sans-serif;
+  width: 25%;
+  border: none;
+  color: #fff;
+  background-color: #F55468;
+  padding: 10px 50px 10px 50px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.new-team-container #next:hover {
+  background-color: #FA4057;
+  color: #fff;
+  transition: all .3s ease-in-out;
+  transform: scale(1.05);
+}
+.new-team-container #diff-name {
+  font-family: Roboto, Gill Sans, sans-serif;
+  color: #9b9b9b;
+  font-weight: 100;
+  margin-top: 2em;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+  .container {
+    width: 80% !important;
+  }
+  .container #team-input {
+    font-size: 18px !important;
+  }
+
+  #new-team-name {
+    font-size: 30px !important;
+  }
+
+  #next {
+    width: 80% !important;
+  }
+}
+
+/*# sourceMappingURL=newteam.css.map */

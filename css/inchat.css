@@ -1,0 +1,75 @@
+#back {
+  float: left;
+  margin-right: 20px;
+  background-image: url(../images/back-arrow.png);
+  height: 22px;
+  width: 22px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  width: 200px;
+  float: right;
+}
+ul li {
+  list-style: none;
+  font-family: Roboto, Gill Sans, sans-serif;
+  background-color: #419bf9;
+  padding: 10px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  float: right;
+  color: #fff;
+  margin-left: 6em;
+  border-radius: 10px 13px 3px 13px;
+}
+
+#chat-input {
+  margin-top: 5em;
+  height: 30px;
+  width: 90%;
+  font-family: Roboto, Gill Sans, sans-serif;
+  font-size: 15px;
+  color: #4B4B4B;
+  border: none;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+:focus {
+  outline: 0;
+}
+
+#send-msg {
+  background-image: url(../images/sent.png);
+  height: 32px;
+  width: 32px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #fff;
+  border-bottom: 1px solid #DCDCDC;
+  cursor: pointer;
+  outline: none;
+  padding-bottom: 11px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .slide-menu {
+    width: 85% !important;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=inchat.css.map */

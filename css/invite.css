@@ -1,0 +1,207 @@
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FFBE54;
+  height: 120px;
+  -webkit-box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.39);
+}
+.nav-bar .title-burger-wrap {
+  width: 350px;
+  padding-top: 2em;
+  margin: 0 auto;
+  display: table;
+}
+.nav-bar .title-burger-wrap #hamburger {
+  float: left;
+  margin-right: 20px;
+  background-image: url(../images/hamburger.png);
+  height: 22px;
+  width: 22px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.nav-bar .title-burger-wrap #back {
+  float: left;
+  margin-right: 20px;
+  background-image: url(../images/back-arrow.png);
+  height: 22px;
+  width: 22px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.nav-bar .title-burger-wrap #team-title {
+  font-family: Roboto, Gill Sans, sans-serif;
+  color: #FFF;
+  text-align: left;
+  font-size: 20px;
+}
+.nav-bar .nav-links {
+  text-align: center;
+  margin-top: 1.7em;
+}
+.nav-bar .nav-links a {
+  font-family: Roboto, Gill Sans, sans-serif;
+  text-decoration: none;
+  padding: 0px 30px 15px 30px;
+}
+.nav-bar .nav-links a:hover {
+  border-bottom: 3px solid yellow;
+}
+.nav-bar .nav-links #invite-tab {
+  color: #fff;
+  border-bottom: 3px solid yellow;
+}
+.nav-bar .nav-links #chats-tab, .nav-bar .nav-links #teams-tab {
+  color: #DCDCDC;
+}
+
+.slide-menu {
+  font-weight: 400;
+  background-color: #FAFAFA;
+  font-size: 18px;
+  font-family: Roboto, Gill Sans, sans-serif;
+  width: 30%;
+  height: 100vh;
+  top: 0;
+  margin-left: -810px;
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.39);
+}
+.slide-menu #close-button {
+  float: right;
+  padding: 30px;
+  color: #4B4B4B;
+  font-size: 25px;
+  cursor: pointer;
+}
+.slide-menu #close-button:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.15);
+}
+.slide-menu a, .slide-menu ul, .slide-menu li {
+  list-style: none;
+  text-decoration: none;
+  color: #4B4B4B;
+  padding: 20px 0px 15px 50px;
+}
+.slide-menu a img, .slide-menu ul img, .slide-menu li img {
+  float: left;
+  padding: 0px 10px;
+  height: 22px;
+  width: auto;
+}
+.slide-menu a:hover, .slide-menu ul:hover, .slide-menu li:hover {
+  color: gray;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+body .main-container {
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+}
+body .main-container .container {
+  width: 370px;
+}
+body .main-container .container h3 {
+  font-family: Roboto, Gill Sans, sans-serif;
+  color: #4B4B4B;
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  margin: -1em 0 2em 0em;
+}
+body .main-container .container .member-container {
+  margin-bottom: 3em;
+  margin-left: 10px;
+}
+body .main-container .container .member-container .profile-pic {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+body .main-container .container .member-container p {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #4B4B4B;
+  font-weight: 400;
+  margin: -40px 0px 0px 80px;
+}
+body .main-container .container .member-container p .check {
+  float: right;
+  margin-right: 6em;
+}
+body .main-container .container #invite-done {
+  display: none;
+  margin-top: 1em;
+  font-family: Roboto, Gill Sans, sans-serif;
+  width: 90%;
+  border: none;
+  color: #fff;
+  background-color: #F55468;
+  padding: 10px 50px 10px 50px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .main-container .container #invite-done:hover {
+  background-color: #FA4057;
+  color: #fff;
+  transition: all .3s ease-in-out;
+  transform: scale(1.05);
+}
+body .main-container .container #group-msg {
+  cursor: pointer;
+  margin: 70% 0% 5% 70%;
+  height: 76px;
+  width: auto;
+}
+body .main-container .container #group-msg:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.08);
+}
+body .main-container .container #android-add {
+  cursor: pointer;
+  margin: 0% 0% 10% 70%;
+  height: 76px;
+  width: auto;
+}
+body .main-container .container #android-add:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.08);
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .slide-menu {
+    width: 85% !important;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+  .container #invite-done {
+    width: 100% !important;
+  }
+}

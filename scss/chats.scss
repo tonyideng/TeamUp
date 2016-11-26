@@ -1,0 +1,225 @@
+$orange: #FFBE54;
+$red: #F55468;
+$black: #4B4B4B;
+$main-font: Roboto, Gill Sans, sans-serif;
+
+.nav-bar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $orange;
+  height: 120px;
+  -webkit-box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.39);
+  box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.39);
+
+  .title-burger-wrap{
+    width: 350px;
+    padding-top: 2em;
+    margin: 0 auto;
+    display: table;
+
+    #hamburger{
+      float: left;
+      margin-right: 20px;
+      background-image: url(../images/hamburger.png);
+      height: 22px;
+      width: 22px;
+      border: none;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-color: rgba(0,0,0,0);
+      cursor: pointer;
+      outline: none;
+    }
+    #team-title{
+      font-family: $main-font;
+      color: #FFF;
+      text-align: left;
+      font-size: 20px;
+    }
+  }
+
+  .nav-links{
+    text-align: center;
+    margin-top: 1.7em;
+    a{
+    font-family: $main-font;
+    text-decoration: none;
+    padding: 0px 30px 15px 30px;
+      &:hover{
+        border-bottom: 3px solid yellow;
+      }
+    }
+
+    #chats-tab{
+      color: #fff;
+      border-bottom: 3px solid yellow;
+    }
+
+    #invite-tab, #teams-tab{
+      color: #DCDCDC;
+    }
+  }
+}
+
+.slide-menu{
+  //display: none;
+  font-weight:400;
+  background-color: #FAFAFA;
+  font-size:18px;
+  font-family: $main-font;
+  width:30%;
+  height: 100vh;
+  top: 0;
+  margin-left: -810px;
+  position:absolute;
+  text-align:left;
+  z-index:1;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.39);
+  box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.39);
+
+  #close-button{
+    float: right;
+    padding: 30px;
+    color: $black;
+    font-size: 25px;
+    cursor: pointer;
+    &:hover{
+      transition: all .3s ease-in-out;
+      transform: scale(1.15);
+    }
+  }
+
+
+  a, ul, li{
+
+    img{
+      float: left;
+      padding: 0px 10px;
+      height: 22px;
+      width: auto;
+    }
+    list-style: none;
+    text-decoration: none;
+    color: $black;
+    padding: 20px 0px 15px 50px;
+    &:hover{
+      color: gray;
+    }
+  }
+}
+
+
+body{
+  background-color: #F6F6F6;
+  .main-container{
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    .container{
+      width: 370px;
+      height: 60vh;
+      h3{
+        font-family: $main-font;
+        color: $black;
+        font-weight: 400;
+        text-align: center;
+        font-size: 16px;
+        margin: -1em 0 2em 0em;
+      }
+      .member-container{
+          margin-bottom: 3em;
+          margin-left: 10px;
+          .profile-pic{
+            height: 60px;
+            width: 60px;
+            border-radius: 100px;
+            object-fit: cover;
+            object-position: center;
+          }
+
+          span{
+            font-family: Roboto, sans-serif;
+            font-size: 11px;
+            color: gray;
+            font-weight: 400;
+            margin-left: 7.4em;
+          }
+
+          p{
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            color: $black;
+            font-weight: 400;
+            margin: -50px 0px 0px 80px;
+
+            #msg-btn{
+              float: right;
+              margin-right: 3em;
+              border: none;
+              border-radius: 3px;
+              background-color: $orange;
+              padding: 5px 10px 5px 10px;
+              font-family: $main-font;
+              color: #fff;
+              font-size: 12px;
+              cursor: pointer;
+            }
+
+          }
+        }
+
+        .divider{
+          height: 1px;
+          border-bottom: 1px solid #dcdcdc;
+          width: 100%;
+        }
+
+        #android-add{
+          cursor: pointer;
+          margin: 80% 0% 10% 70%;
+        }
+
+        #invite-done{
+          display: none;
+          margin-top: 1em;
+          font-family: $main-font;
+          width: 90%;
+          border: none;
+          color: #fff;
+          background-color: $red;
+          padding: 10px 50px 10px 50px;
+          font-size: 20px;
+          border-radius: 4px;
+          cursor: pointer;
+          &:hover{
+            background-color: #FA4057;
+            color: #fff;
+            transition: all .3s ease-in-out;
+            transform: scale(1.05);
+          }
+        }
+
+    }
+  }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px){ //changes the width of the slider menu for mobile
+.slide-menu{
+    width: 85% !important;
+  }
+
+  .container{
+    width: 100% !important;
+
+    #invite-done{
+      width: 100% !important;
+    }
+  }
+
+}

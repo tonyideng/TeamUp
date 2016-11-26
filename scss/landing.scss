@@ -1,0 +1,49 @@
+$orange: #FFBE54;
+$red: #F55468;
+$black: #4B4B4B;
+$main-font: Roboto, Gill Sans, sans-serif;
+
+body{
+  background-image: url(../images/landing-bg.png);
+  .main-container{
+    margin-top: -4em;
+
+      #logo{
+        display: table;
+        margin: 0 auto;
+        width: 160px;
+        height: auto;
+      }
+      #team-up{
+        vertical-align: middle;
+        display: table;
+        margin: 0 auto;
+        margin-top: 15px;
+      }
+
+      #create{
+        margin-top: 3em;
+        font-family: $main-font;
+        display: none;
+        width: 100%;
+        border: none;
+        color: #fff;
+        background-color: $red;
+        padding: 10px 70px 10px 70px;
+        font-size: 25px;
+        border-radius: 4px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.39);
+        -moz-box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.39);
+        box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.39);
+        &:hover{
+          background-color: #FA4057;
+          color: #fff;
+          transition: all .3s ease-in-out;
+          transform: scale(1.12);
+        }
+    }
+
+}
+
+}
